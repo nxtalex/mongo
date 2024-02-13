@@ -21,7 +21,6 @@ export default function ContactForm() {
       },
       body: JSON.stringify({
         fullname,
-        email,
         message,
       }),
     });
