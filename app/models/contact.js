@@ -5,8 +5,8 @@ const contactSchema = new Schema({
     type: String,
     required: [true, "Name is required."],
     trim: true,
-    minLength: [2, "Name must be larger than 2 characters"],
-    maxLength: [50, "Name must be lesser than 50 characters"],
+    minLength: [2, "Name must be longer than 2 characters"],
+    maxLength: [50, "Name must be less than 50 characters"],
   },
 
   message: {
