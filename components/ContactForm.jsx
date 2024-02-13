@@ -46,27 +46,16 @@ export default function ContactForm() {
         className="py-4 mt-4 border-t flex flex-col gap-5"
       >
         <div>
-          <label htmlFor="fullname">Full Name</label>
+          <label htmlFor="fullname">Name</label>
           <input
             onChange={(e) => setFullname(e.target.value)}
             value={fullname}
             type="text"
             id="fullname"
-            placeholder="John Doe"
+            placeholder="Alex"
           />
         </div>
-
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            type="text"
-            id="email"
-            placeholder="john@gmail.com"
-          />
-        </div>
-
+        
         <div>
           <label htmlFor="message">Your Message</label>
           <textarea
