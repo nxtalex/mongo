@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState("");
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
@@ -13,7 +12,6 @@ export default function ContactForm() {
     e.preventDefault();
 
     console.log("Full name: ", fullname);
-    console.log("Email: ", email);
     console.log("Message: ", message);
 
     const res = await fetch("api/contact", {
@@ -34,7 +32,6 @@ export default function ContactForm() {
 
     if (success) {
       setFullname("");
-      setEmail("");
       setMessage("");
     }
   };
